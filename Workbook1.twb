@@ -1,0 +1,886 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20224.22.1117.1841                               -->
+<workbook original-version='18.1' source-build='2022.4.0 (20224.22.1117.1841)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <_.fcp.AnimationOnByDefault.true...AnimationOnByDefault />
+    <_.fcp.MarkAnimation.true...MarkAnimation />
+    <_.fcp.ObjectModelEncapsulateLegacy.true...ObjectModelEncapsulateLegacy />
+    <_.fcp.ObjectModelTableType.true...ObjectModelTableType />
+    <_.fcp.SchemaViewerObjectModel.true...SchemaViewerObjectModel />
+    <SheetIdentifierTracking />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <_.fcp.AnimationOnByDefault.false...style>
+    <_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule element='animation'>
+      <_.fcp.AnimationOnByDefault.false...format attr='animation-on' value='ao-on' />
+    </_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule>
+  </_.fcp.AnimationOnByDefault.false...style>
+  <datasources>
+    <datasource caption='Churn' inline='true' name='federated.02zgd9005gxrli17871jm0lafv39' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='Churn' name='textscan.00sd9cn0gxeexk13gj0wl06xrrx2'>
+            <connection class='textscan' directory='C:/Study/Customer Churn' filename='Churn.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='textscan.00sd9cn0gxeexk13gj0wl06xrrx2' name='Churn.csv' table='[Churn#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_IN' separator=','>
+            <column datatype='integer' name='CreditScore' ordinal='0' />
+            <column datatype='string' name='Geography' ordinal='1' />
+            <column datatype='string' name='Gender' ordinal='2' />
+            <column datatype='integer' name='Age' ordinal='3' />
+            <column datatype='integer' name='Tenure' ordinal='4' />
+            <column datatype='real' name='Balance' ordinal='5' />
+            <column datatype='integer' name='NumOfProducts' ordinal='6' />
+            <column datatype='integer' name='HasCrCard' ordinal='7' />
+            <column datatype='integer' name='IsActiveMember' ordinal='8' />
+            <column datatype='real' name='EstimatedSalary' ordinal='9' />
+            <column datatype='integer' name='Exited' ordinal='10' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation connection='textscan.00sd9cn0gxeexk13gj0wl06xrrx2' name='Churn.csv' table='[Churn#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_IN' separator=','>
+            <column datatype='integer' name='CreditScore' ordinal='0' />
+            <column datatype='string' name='Geography' ordinal='1' />
+            <column datatype='string' name='Gender' ordinal='2' />
+            <column datatype='integer' name='Age' ordinal='3' />
+            <column datatype='integer' name='Tenure' ordinal='4' />
+            <column datatype='real' name='Balance' ordinal='5' />
+            <column datatype='integer' name='NumOfProducts' ordinal='6' />
+            <column datatype='integer' name='HasCrCard' ordinal='7' />
+            <column datatype='integer' name='IsActiveMember' ordinal='8' />
+            <column datatype='real' name='EstimatedSalary' ordinal='9' />
+            <column datatype='integer' name='Exited' ordinal='10' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[Churn.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_GB&quot;</attribute>
+              <attribute datatype='string' name='currency'>&quot;₹&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_IN&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>CreditScore</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[CreditScore]</local-name>
+            <parent-name>[Churn.csv]</parent-name>
+            <remote-alias>CreditScore</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Churn.csv_141413B91D264D37B1BC59ED6A0761F6]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Geography</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Geography]</local-name>
+            <parent-name>[Churn.csv]</parent-name>
+            <remote-alias>Geography</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Churn.csv_141413B91D264D37B1BC59ED6A0761F6]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Gender</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Gender]</local-name>
+            <parent-name>[Churn.csv]</parent-name>
+            <remote-alias>Gender</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Churn.csv_141413B91D264D37B1BC59ED6A0761F6]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Age</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Age]</local-name>
+            <parent-name>[Churn.csv]</parent-name>
+            <remote-alias>Age</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Churn.csv_141413B91D264D37B1BC59ED6A0761F6]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Tenure</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Tenure]</local-name>
+            <parent-name>[Churn.csv]</parent-name>
+            <remote-alias>Tenure</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Churn.csv_141413B91D264D37B1BC59ED6A0761F6]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Balance</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Balance]</local-name>
+            <parent-name>[Churn.csv]</parent-name>
+            <remote-alias>Balance</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Churn.csv_141413B91D264D37B1BC59ED6A0761F6]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>NumOfProducts</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[NumOfProducts]</local-name>
+            <parent-name>[Churn.csv]</parent-name>
+            <remote-alias>NumOfProducts</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Churn.csv_141413B91D264D37B1BC59ED6A0761F6]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>HasCrCard</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[HasCrCard]</local-name>
+            <parent-name>[Churn.csv]</parent-name>
+            <remote-alias>HasCrCard</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Churn.csv_141413B91D264D37B1BC59ED6A0761F6]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>IsActiveMember</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[IsActiveMember]</local-name>
+            <parent-name>[Churn.csv]</parent-name>
+            <remote-alias>IsActiveMember</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Churn.csv_141413B91D264D37B1BC59ED6A0761F6]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>EstimatedSalary</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[EstimatedSalary]</local-name>
+            <parent-name>[Churn.csv]</parent-name>
+            <remote-alias>EstimatedSalary</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Churn.csv_141413B91D264D37B1BC59ED6A0761F6]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Exited</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Exited]</local-name>
+            <parent-name>[Churn.csv]</parent-name>
+            <remote-alias>Exited</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Churn.csv_141413B91D264D37B1BC59ED6A0761F6]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='Credit Score' datatype='integer' name='[CreditScore]' role='measure' type='quantitative' />
+      <column caption='Estimated Salary' datatype='real' name='[EstimatedSalary]' role='measure' type='quantitative' />
+      <column caption='Has Cr Card' datatype='integer' name='[HasCrCard]' role='measure' type='quantitative' />
+      <column caption='Is Active Member' datatype='integer' name='[IsActiveMember]' role='measure' type='quantitative' />
+      <column caption='Num Of Products' datatype='integer' name='[NumOfProducts]' role='measure' type='quantitative' />
+      <_.fcp.ObjectModelTableType.true...column caption='Churn.csv' datatype='table' name='[__tableau_internal_object_id__].[Churn.csv_141413B91D264D37B1BC59ED6A0761F6]' role='measure' type='quantitative' />
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;India&quot;' />
+      </semantic-values>
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='Churn.csv' id='Churn.csv_141413B91D264D37B1BC59ED6A0761F6'>
+            <properties context=''>
+              <relation connection='textscan.00sd9cn0gxeexk13gj0wl06xrrx2' name='Churn.csv' table='[Churn#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_IN' separator=','>
+                  <column datatype='integer' name='CreditScore' ordinal='0' />
+                  <column datatype='string' name='Geography' ordinal='1' />
+                  <column datatype='string' name='Gender' ordinal='2' />
+                  <column datatype='integer' name='Age' ordinal='3' />
+                  <column datatype='integer' name='Tenure' ordinal='4' />
+                  <column datatype='real' name='Balance' ordinal='5' />
+                  <column datatype='integer' name='NumOfProducts' ordinal='6' />
+                  <column datatype='integer' name='HasCrCard' ordinal='7' />
+                  <column datatype='integer' name='IsActiveMember' ordinal='8' />
+                  <column datatype='real' name='EstimatedSalary' ordinal='9' />
+                  <column datatype='integer' name='Exited' ordinal='10' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+        </objects>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+    <datasource caption='Churn (2)' inline='true' name='federated.0tpb53z0us4uvg10y0a2915t1r13' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='Churn' name='textscan.1cxhnah1q3eygv1761fux1rqi005'>
+            <connection class='textscan' directory='C:/Study/Customer Churn' filename='Churn.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='textscan.1cxhnah1q3eygv1761fux1rqi005' name='Churn.csv' table='[Churn#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_IN' separator=','>
+            <column datatype='integer' name='CreditScore' ordinal='0' />
+            <column datatype='string' name='Geography' ordinal='1' />
+            <column datatype='string' name='Gender' ordinal='2' />
+            <column datatype='integer' name='Age' ordinal='3' />
+            <column datatype='integer' name='Tenure' ordinal='4' />
+            <column datatype='real' name='Balance' ordinal='5' />
+            <column datatype='integer' name='NumOfProducts' ordinal='6' />
+            <column datatype='integer' name='HasCrCard' ordinal='7' />
+            <column datatype='integer' name='IsActiveMember' ordinal='8' />
+            <column datatype='real' name='EstimatedSalary' ordinal='9' />
+            <column datatype='integer' name='Exited' ordinal='10' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation connection='textscan.1cxhnah1q3eygv1761fux1rqi005' name='Churn.csv' table='[Churn#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_IN' separator=','>
+            <column datatype='integer' name='CreditScore' ordinal='0' />
+            <column datatype='string' name='Geography' ordinal='1' />
+            <column datatype='string' name='Gender' ordinal='2' />
+            <column datatype='integer' name='Age' ordinal='3' />
+            <column datatype='integer' name='Tenure' ordinal='4' />
+            <column datatype='real' name='Balance' ordinal='5' />
+            <column datatype='integer' name='NumOfProducts' ordinal='6' />
+            <column datatype='integer' name='HasCrCard' ordinal='7' />
+            <column datatype='integer' name='IsActiveMember' ordinal='8' />
+            <column datatype='real' name='EstimatedSalary' ordinal='9' />
+            <column datatype='integer' name='Exited' ordinal='10' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[Churn.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_GB&quot;</attribute>
+              <attribute datatype='string' name='currency'>&quot;₹&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_IN&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>CreditScore</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[CreditScore]</local-name>
+            <parent-name>[Churn.csv]</parent-name>
+            <remote-alias>CreditScore</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Churn.csv_AA9664A1C83D4964A46E27CCD577D7A4]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Geography</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Geography]</local-name>
+            <parent-name>[Churn.csv]</parent-name>
+            <remote-alias>Geography</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Churn.csv_AA9664A1C83D4964A46E27CCD577D7A4]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Gender</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Gender]</local-name>
+            <parent-name>[Churn.csv]</parent-name>
+            <remote-alias>Gender</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Churn.csv_AA9664A1C83D4964A46E27CCD577D7A4]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Age</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Age]</local-name>
+            <parent-name>[Churn.csv]</parent-name>
+            <remote-alias>Age</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Churn.csv_AA9664A1C83D4964A46E27CCD577D7A4]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Tenure</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Tenure]</local-name>
+            <parent-name>[Churn.csv]</parent-name>
+            <remote-alias>Tenure</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Churn.csv_AA9664A1C83D4964A46E27CCD577D7A4]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Balance</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Balance]</local-name>
+            <parent-name>[Churn.csv]</parent-name>
+            <remote-alias>Balance</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Churn.csv_AA9664A1C83D4964A46E27CCD577D7A4]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>NumOfProducts</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[NumOfProducts]</local-name>
+            <parent-name>[Churn.csv]</parent-name>
+            <remote-alias>NumOfProducts</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Churn.csv_AA9664A1C83D4964A46E27CCD577D7A4]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>HasCrCard</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[HasCrCard]</local-name>
+            <parent-name>[Churn.csv]</parent-name>
+            <remote-alias>HasCrCard</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Churn.csv_AA9664A1C83D4964A46E27CCD577D7A4]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>IsActiveMember</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[IsActiveMember]</local-name>
+            <parent-name>[Churn.csv]</parent-name>
+            <remote-alias>IsActiveMember</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Churn.csv_AA9664A1C83D4964A46E27CCD577D7A4]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>EstimatedSalary</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[EstimatedSalary]</local-name>
+            <parent-name>[Churn.csv]</parent-name>
+            <remote-alias>EstimatedSalary</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Churn.csv_AA9664A1C83D4964A46E27CCD577D7A4]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Exited</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Exited]</local-name>
+            <parent-name>[Churn.csv]</parent-name>
+            <remote-alias>Exited</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Churn.csv_AA9664A1C83D4964A46E27CCD577D7A4]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='Credit Score' datatype='integer' name='[CreditScore]' role='measure' type='quantitative' />
+      <column caption='Estimated Salary' datatype='real' name='[EstimatedSalary]' role='measure' type='quantitative' />
+      <column datatype='integer' name='[Exited]' role='measure' type='quantitative' />
+      <column datatype='string' name='[Gender]' role='dimension' type='nominal' />
+      <column caption='Has Cr Card' datatype='integer' name='[HasCrCard]' role='measure' type='quantitative' />
+      <column caption='Is Active Member' datatype='integer' name='[IsActiveMember]' role='measure' type='quantitative' />
+      <column caption='Num Of Products' datatype='integer' name='[NumOfProducts]' role='measure' type='quantitative' />
+      <column datatype='integer' name='[Tenure]' role='measure' type='quantitative' />
+      <_.fcp.ObjectModelTableType.true...column caption='Churn.csv' datatype='table' name='[__tableau_internal_object_id__].[Churn.csv_AA9664A1C83D4964A46E27CCD577D7A4]' role='measure' type='quantitative' />
+      <column-instance column='[__tableau_internal_object_id__].[Churn.csv_AA9664A1C83D4964A46E27CCD577D7A4]' derivation='Count' name='[__tableau_internal_object_id__].[cnt:Churn.csv_AA9664A1C83D4964A46E27CCD577D7A4:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Gender]' derivation='None' name='[none:Gender:nk]' pivot='key' type='nominal' />
+      <column-instance column='[CreditScore]' derivation='Sum' name='[sum:CreditScore:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Exited]' derivation='Sum' name='[sum:Exited:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[NumOfProducts]' derivation='Sum' name='[sum:NumOfProducts:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Tenure]' derivation='Sum' name='[sum:Tenure:qk]' pivot='key' type='quantitative' />
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[:Measure Names]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>&quot;[federated.0tpb53z0us4uvg10y0a2915t1r13].[__tableau_internal_object_id__].[cnt:Churn.csv_AA9664A1C83D4964A46E27CCD577D7A4:qk]&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;[federated.0tpb53z0us4uvg10y0a2915t1r13].[sum:Exited:qk]&quot;</bucket>
+            </map>
+            <map to='#76b7b2'>
+              <bucket>&quot;[federated.0tpb53z0us4uvg10y0a2915t1r13].[sum:Tenure:qk]&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;[federated.0tpb53z0us4uvg10y0a2915t1r13].[sum:NumOfProducts:qk]&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;[federated.0tpb53z0us4uvg10y0a2915t1r13].[sum:CreditScore:qk]&quot;</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[none:Gender:nk]' type='palette'>
+            <map to='#79706e'>
+              <bucket>&quot;Male&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Female&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;India&quot;' />
+      </semantic-values>
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='Churn.csv' id='Churn.csv_AA9664A1C83D4964A46E27CCD577D7A4'>
+            <properties context=''>
+              <relation connection='textscan.1cxhnah1q3eygv1761fux1rqi005' name='Churn.csv' table='[Churn#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_IN' separator=','>
+                  <column datatype='integer' name='CreditScore' ordinal='0' />
+                  <column datatype='string' name='Geography' ordinal='1' />
+                  <column datatype='string' name='Gender' ordinal='2' />
+                  <column datatype='integer' name='Age' ordinal='3' />
+                  <column datatype='integer' name='Tenure' ordinal='4' />
+                  <column datatype='real' name='Balance' ordinal='5' />
+                  <column datatype='integer' name='NumOfProducts' ordinal='6' />
+                  <column datatype='integer' name='HasCrCard' ordinal='7' />
+                  <column datatype='integer' name='IsActiveMember' ordinal='8' />
+                  <column datatype='real' name='EstimatedSalary' ordinal='9' />
+                  <column datatype='integer' name='Exited' ordinal='10' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+        </objects>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='Geography wise credit score'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontname='Tableau Regular'>Geography-wise Gender Based credit score Distribution</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Churn (2)' name='federated.0tpb53z0us4uvg10y0a2915t1r13' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0tpb53z0us4uvg10y0a2915t1r13'>
+            <column caption='Credit Score' datatype='integer' name='[CreditScore]' role='measure' type='quantitative' />
+            <column datatype='string' name='[Gender]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Geography]' role='dimension' type='nominal' />
+            <column-instance column='[Gender]' derivation='None' name='[none:Gender:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Geography]' derivation='None' name='[none:Geography:nk]' pivot='key' type='nominal' />
+            <column-instance column='[CreditScore]' derivation='Sum' name='[sum:CreditScore:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+        </panes>
+        <rows>([federated.0tpb53z0us4uvg10y0a2915t1r13].[none:Gender:nk] / [federated.0tpb53z0us4uvg10y0a2915t1r13].[none:Geography:nk])</rows>
+        <cols>[federated.0tpb53z0us4uvg10y0a2915t1r13].[sum:CreditScore:qk]</cols>
+      </table>
+      <simple-id uuid='{DAFD64B6-CF66-4122-A34C-CF4DD64AAE84}' />
+    </worksheet>
+    <worksheet name='Male female distribution'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontsize='20'>Male female distribution</run>
+            <run>Æ&#10;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Churn (2)' name='federated.0tpb53z0us4uvg10y0a2915t1r13' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0tpb53z0us4uvg10y0a2915t1r13'>
+            <column datatype='string' name='[Gender]' role='dimension' type='nominal' />
+            <column caption='Num Of Products' datatype='integer' name='[NumOfProducts]' role='measure' type='quantitative' />
+            <column-instance column='[Gender]' derivation='None' name='[none:Gender:nk]' pivot='key' type='nominal' />
+            <column-instance column='[NumOfProducts]' derivation='Sum' name='[sum:NumOfProducts:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='mark'>
+            <encoding attr='size-bar' field='[federated.0tpb53z0us4uvg10y0a2915t1r13].[sum:NumOfProducts:qk]' field-type='quantitative' max-size='1' min-size='0.005' type='centersize' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Pie' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <encodings>
+              <color column='[federated.0tpb53z0us4uvg10y0a2915t1r13].[none:Gender:nk]' />
+              <wedge-size column='[federated.0tpb53z0us4uvg10y0a2915t1r13].[sum:NumOfProducts:qk]' />
+              <size column='[federated.0tpb53z0us4uvg10y0a2915t1r13].[sum:NumOfProducts:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='size' value='1.7691160440444946' />
+                <format attr='mark-transparency' value='229' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{8A18046F-2BC1-4377-95D9-16CDA61FC79C}' />
+    </worksheet>
+  </worksheets>
+  <windows source-height='51'>
+    <window class='worksheet' name='Male female distribution'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card AVG='true' KURTOSIS='false' MAX='true' MEDIAN='true' MIN='true' QUART1='false' QUART3='false' SKEWNESS='false' STDEV='false' SUM='true' type='summary' />
+            <card pane-specification-id='0' param='[federated.0tpb53z0us4uvg10y0a2915t1r13].[none:Gender:nk]' type='color' />
+            <card pane-specification-id='0' param='[federated.0tpb53z0us4uvg10y0a2915t1r13].[sum:NumOfProducts:qk]' type='size' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.0tpb53z0us4uvg10y0a2915t1r13].[:Measure Names]</field>
+            <field>[federated.0tpb53z0us4uvg10y0a2915t1r13].[none:Gender:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{21C47F16-3BAF-40A5-8B13-003DAA8274AF}' />
+    </window>
+    <window class='worksheet' maximized='true' name='Geography wise credit score'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.0tpb53z0us4uvg10y0a2915t1r13].[none:Gender:nk]</field>
+            <field>[federated.0tpb53z0us4uvg10y0a2915t1r13].[sum:CreditScore:qk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{83950F64-444E-435A-BC0F-B04EB7A7533E}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='192' name='Geography wise credit score' width='192'>
+      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
+      TkSuQmCC
+    </thumbnail>
+    <thumbnail height='164' name='Male female distribution' width='164'>
+      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
+      FBSSiOL/VxkgRfq2D9wAAAAASUVORK5CYII=
+    </thumbnail>
+  </thumbnails>
+</workbook>
